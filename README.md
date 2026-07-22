@@ -60,8 +60,8 @@ Each phase includes both the Red Team activity and the Blue Team investigation.
 
 ## Lab Environment
 
-![Lab Environment](screenshots/01-lab-environment.png)
-<img width="745" height="388" alt="screenshots/01-lab-environment.png" src="https://github.com/user-attachments/assets/c28aecdd-fc80-4ee2-9a89-f26a55e693d3" />
+<img width="745" height="388" alt="sscreenshots/01-lab-environment.png" src="https://github.com/user-attachments/assets/319c162d-5868-4ec6-9512-15cc8959af81" />
+
 
 
 
@@ -71,7 +71,7 @@ Each phase includes both the Red Team activity and the Blue Team investigation.
 
 Using Nmap, the attacker identified exposed services running on the Domain Controller.
 
-![Nmap Scan](screenshots/02-nmap-scan.png)
+<img width="1440" height="900" alt="screenshots/02-nmap-scan.png" src="https://github.com/user-attachments/assets/f456a1bd-2a4c-46ba-afcf-52c2af9b2663" />
 
 ---
 
