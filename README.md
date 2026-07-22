@@ -61,6 +61,8 @@ Each phase includes both the Red Team activity and the Blue Team investigation.
 ## Lab Environment
 
 ![Lab Environment](screenshots/01-lab-environment.png)
+<img width="898" height="381" alt="Screenshot 2026-07-22 at 5 34 40 PM" src="https://github.com/user-attachments/assets/7c4f932c-d8b2-4a10-b953-ce4796572678" />
+
 
 ---
 
