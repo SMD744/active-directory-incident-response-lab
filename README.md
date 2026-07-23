@@ -1,4 +1,4 @@
-<img width="1440" height="900" alt="screenshots:07-data-exfiltration" src="https://github.com/user-attachments/assets/472aa802-006d-453c-be8c-c8ee90c332fd" /><img width="1440" height="900" alt="screenshots:006-persistence" src="https://github.com/user-attachments/assets/03cc761e-49d0-4c0a-8760-07e6408b23f9" /><img width="1440" height="900" alt="screenshots:06-persistence" src="https://github.com/user-attachments/assets/2ccfb8e7-fa7c-4deb-aa73-ca066be0ae82" /># 🛡️ Active Directory Incident Response Lab
+🛡️ Active Directory Incident Response Lab
 
 > **Final Project – ElevateUTTech Cybersecurity Bootcamp**
 
@@ -128,7 +128,6 @@ To maintain long-term access, a new privileged account was created. Windows Secu
 
 The attacker accessed the administrative SMB share and copied sensitive files from the Domain Controller. Splunk logs helped identify the unauthorized network share access.
 
-![Data Exfiltration](screenshots/07-data-exfiltration.png)
 <img width="1440" height="900" alt="screenshots/07-data-exfiltration.png" src="https://github.com/user-attachments/assets/7a750023-78a6-4745-b70d-58a37e983905" />
 <img width="1440" height="900" alt="screenshots/007-data-exfiltration.png" src="https://github.com/user-attachments/assets/b3edc54e-8cf2-4e97-b2d4-734c4dbbde6a" />
 
