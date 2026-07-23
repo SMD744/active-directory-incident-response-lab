@@ -1,4 +1,4 @@
-# 🛡️ Active Directory Incident Response Lab
+<img width="1440" height="900" alt="screenshots:07-data-exfiltration" src="https://github.com/user-attachments/assets/472aa802-006d-453c-be8c-c8ee90c332fd" /><img width="1440" height="900" alt="screenshots:006-persistence" src="https://github.com/user-attachments/assets/03cc761e-49d0-4c0a-8760-07e6408b23f9" /><img width="1440" height="900" alt="screenshots:06-persistence" src="https://github.com/user-attachments/assets/2ccfb8e7-fa7c-4deb-aa73-ca066be0ae82" /># 🛡️ Active Directory Incident Response Lab
 
 > **Final Project – ElevateUTTech Cybersecurity Bootcamp**
 
@@ -79,7 +79,8 @@ Using Nmap, the attacker identified exposed services running on the Domain Contr
 
 Valid Active Directory usernames were identified before attempting authentication attacks.
 
-![Username Enumeration](screenshots/03-kerbrute-enumeration.png)
+<img width="2880" height="1800" alt="screenshots/03-kerbrute-enumeration.png" src="https://github.com/user-attachments/assets/e7f0b988-ecb7-49be-8466-51b6fea7a3b0" />
+
 
 ---
 
@@ -87,7 +88,10 @@ Valid Active Directory usernames were identified before attempting authenticatio
 
 Splunk detected multiple failed logon attempts followed by a successful authentication using Windows Event IDs **4625** and **4624**.
 
-![Password Spraying](screenshots/04-password-spraying.png)
+<img width="2880" height="1800" alt="screenshots/04-password-spraying.png" src="https://github.com/user-attachments/assets/d94dc475-e5fc-4033-a4b0-723ea2440e7f" />
+<img width="2880" height="1800" alt="screenshots:004-password-spraying" src="https://github.com/user-attachments/assets/f9f50f90-dc09-410f-9f66-e4a54af76913" />
+
+
 
 ---
 
@@ -95,7 +99,13 @@ Splunk detected multiple failed logon attempts followed by a successful authenti
 
 After gaining access, the compromised account was added to the Domain Admins group. Splunk captured the related security events used to investigate the privilege escalation.
 
-![Privilege Escalation](screenshots/05-privilege-escalation.png)
+
+<img width="2880" height="1800" alt="screenshots/05-privilege-escalation.png" src="https://github.com/user-attachments/assets/0b8b5057-8379-48c5-896e-bd04f381ebb7" />
+<img width="2880" height="1800" alt="screenshots:005-privilege-escalation" src="https://github.com/user-attachments/assets/91d85a54-bf23-4760-b60f-65792b1dd583" />
+<img width="2880" height="1800" alt="screenshots:015-privilege-escalation" src="https://github.com/user-attachments/assets/0b488542-0bd4-4c89-9252-328946f5b4f6" />
+
+
+
 
 ---
 
@@ -103,7 +113,14 @@ After gaining access, the compromised account was added to the Domain Admins gro
 
 To maintain long-term access, a new privileged account was created. Windows Security Events were used to identify the account creation and group membership changes.
 
-![Persistence](screenshots/06-persistence.png)
+
+<img width="1440" height="900" alt="screenshots/06-persistence.png" src="https://github.com/user-attachments/assets/e35d5d93-67df-43cf-9cd1-ac33614b7c25" />
+<img width="1440" height="900" alt="screenshots:006-persistence" src="https://github.com/user-attachments/assets/0ddb7735-b7c0-4197-bc65-fb2260bcc88d" />
+<img width="1440" height="900" alt="screenshots:106-persistence" src="https://github.com/user-attachments/assets/5d3341f8-2675-4996-86c2-69bc9cd7ea81" />
+
+
+ 
+
 
 ---
 
@@ -112,6 +129,11 @@ To maintain long-term access, a new privileged account was created. Windows Secu
 The attacker accessed the administrative SMB share and copied sensitive files from the Domain Controller. Splunk logs helped identify the unauthorized network share access.
 
 ![Data Exfiltration](screenshots/07-data-exfiltration.png)
+<img width="1440" height="900" alt="screenshots/07-data-exfiltration.png" src="https://github.com/user-attachments/assets/7a750023-78a6-4745-b70d-58a37e983905" />
+<img width="1440" height="900" alt="screenshots/007-data-exfiltration.png" src="https://github.com/user-attachments/assets/b3edc54e-8cf2-4e97-b2d4-734c4dbbde6a" />
+
+
+
 
 ---
 
@@ -119,7 +141,9 @@ The attacker accessed the administrative SMB share and copied sensitive files fr
 
 The attacker attempted to clear the Windows Event Logs to hide their activity. Despite this, Splunk preserved the logs before they were deleted, allowing the investigation to continue.
 
-![Defense Evasion](screenshots/08-defense-evasion.png)
+<img width="1440" height="900" alt="screenshots/08-defense-evasion.png" src="https://github.com/user-attachments/assets/767eb104-6d51-4548-9e2b-6249fd435c7d" />
+<img width="1440" height="900" alt="screenshots:008-defense-evasion" src="https://github.com/user-attachments/assets/d73f5ba2-b96c-4dca-856a-43805e25d633" />
+
 
 ---
 
@@ -127,7 +151,9 @@ The attacker attempted to clear the Windows Event Logs to hide their activity. D
 
 The investigation reconstructed the complete attack timeline from reconnaissance to defense evasion.
 
-![Incident Timeline](screenshots/09-incident-timeline.png)
+<img width="737" height="456" alt="screenshots/09-incident-timeline.png" src="https://github.com/user-attachments/assets/8017e75c-1fc5-4c28-91d3-016fbce75e5d" />
+
+
 
 ---
 
