@@ -2,6 +2,7 @@
 > **A hands-on Red Team vs Blue Team cybersecurity lab focused on Active Directory attack simulation, SIEM-based detection, incident investigation, and response.**
 
 
+
 ## 📌 Project Overview
 
 This project is a full incident response simulation conducted in an isolated Active Directory lab environment.
@@ -15,6 +16,7 @@ Rather than focusing only on offensive techniques, the project follows the compl
 The exercise demonstrates how attacker activity can leave behind security telemetry and how a SOC analyst can correlate those events to understand what happened, identify indicators of compromise (IOCs), reconstruct the attack timeline, and recommend appropriate response actions.
 
 ---
+
 
 ## 🎯 Project Objectives
 
@@ -35,6 +37,7 @@ The objectives of this project were to:
 ---
 
 
+
 ## 🖥️ Lab Environment
 
 | Component | Technology |
@@ -48,6 +51,7 @@ The objectives of this project were to:
 The attack simulation was performed inside an isolated lab environment to safely reproduce attacker behavior and investigate the resulting security events.
 
 ---
+
 
 ## ⚔️ Attack Lifecycle
 
@@ -66,6 +70,8 @@ The simulation covered the following stages:
 Each phase included both simulated attacker activity and defensive investigation using collected security telemetry.
 
 ---
+
+
 ## 🔍 SOC Investigation Approach
 
 The investigation followed a structured incident response process:
@@ -87,6 +93,8 @@ IOC Identification
        ↓
 Containment & Response Recommendations
 
+---
+
 
 
 # 📸 Project Screenshots
@@ -97,8 +105,6 @@ Containment & Response Recommendations
 
 
 
-
----
 
 ## Reconnaissance
 
