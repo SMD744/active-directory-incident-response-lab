@@ -94,6 +94,8 @@ IOC Identification
        ↓
 Containment & Response Recommendations
 
+```
+
 ---
 
 
