@@ -93,7 +93,7 @@ This activity established a secondary privileged account that could be used to m
 
 ---
 
-📁 Data Access Indicators
+## 📁 Data Access Indicators
 
 The attacker used the compromised administrative privileges to access the Domain Controller's administrative SMB share:
 ```
@@ -101,14 +101,16 @@ The attacker used the compromised administrative privileges to access the Domain
 
 ```
 The investigation identified the Cyberfolder directory as containing potentially sensitive organizational files, including:
+```
 SecurityDatabase.txt
 Memo.txt
 new cyber text.txt
+```
 Network share activity was investigated using Windows Security Event ID 5140.
 
 ---
 
-🧹 Defense Evasion Indicators
+## 🧹 Defense Evasion Indicators
 
 The attacker attempted to remove forensic evidence by clearing Windows Event Logs.
 The relevant indicators were:
@@ -122,9 +124,10 @@ The centralized Splunk environment had already collected relevant events through
 
 ---
 
-📊 Key Detection Events
+## 📊 Key Detection Events
 
 The following Event IDs were particularly important during the investigation:
+```
 4624  - Successful Logon
 4625  - Failed Logon
 4672  - Special Privileges Assigned
@@ -136,6 +139,7 @@ The following Event IDs were particularly important during the investigation:
 5140  - Network Share Access
 1102  - Security Log Cleared
 104   - System/Application Log Cleared
+```
 
 Correlation of these events allowed the Blue Team to reconstruct the attack from initial access through privilege escalation, persistence, data access, and defense evasion.
 
@@ -159,21 +163,21 @@ These actions formed part of the containment, eradication, and recovery process 
 
 ---
 
-📌 Summary
+## 📌 Summary
 
 The investigation identified a combination of network, account, authentication, privilege, persistence, file-access, and log-clearing indicators.
 
 The most significant indicators were:
 
-Attacker IP: 192.168.1.186
-Compromised account: Trent
-Unauthorized privileged account: SAMADT
-Target Domain Controller: 192.168.1.191
-Password spraying: 4625 → 4624
-Privilege escalation: 4672, 4728, 4732, 4756
-Account creation: 4720
-SMB access: 5140
-Log clearing: 1102, 104
+Attacker IP: ```192.168.1.186```
+Compromised account: ```Trent```
+Unauthorized privileged account: ```SAMADT```
+Target Domain Controller: ```192.168.1.191```
+Password spraying: ```4625 → 4624```
+Privilege escalation: ```4672, 4728, 4732, 4756```
+Account creation: ```4720```
+SMB access: ```5140```
+Log clearing: ```1102, 104```
 
 
 
