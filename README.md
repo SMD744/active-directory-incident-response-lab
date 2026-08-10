@@ -1,4 +1,5 @@
 🛡️ Active Directory Incident Response Lab
+
 > **A hands-on Red Team vs Blue Team cybersecurity lab focused on Active Directory attack simulation, SIEM-based detection, incident investigation, and response.**
 
 
@@ -106,11 +107,20 @@ Containment & Response Recommendations
 
 
 
-## Reconnaissance
 
-Using Nmap, the attacker identified exposed services running on the Domain Controller.
+## 🔎 Reconnaissance
 
-<img width="1440" height="900" alt="screenshots/02-nmap-scan.png" src="https://github.com/user-attachments/assets/f456a1bd-2a4c-46ba-afcf-52c2af9b2663" />
+Nmap was used from the Kali Linux attacker machine to identify exposed services on the Active Directory Domain Controller.
+
+The scan identified several Windows and Active Directory services, including Kerberos (88), LDAP (389), SMB (445), RDP (3389), WinRM (5985), and Global Catalog services.
+
+These findings confirmed the target's Active Directory role and helped determine the next stage of the simulated attack.
+
+### Evidence
+
+![Nmap Reconnaissance Scan](screenshots/02-nmap-scan.png)
+
+
 
 ---
 
@@ -177,7 +187,7 @@ The attacker accessed the administrative SMB share and copied sensitive files fr
 
 ## Defense Evasion
 
-The attacker attempted to clear the Windows Event Logs to hide their activity. Despite this, Splunk preserved the logs before they were deleted, allowing the investigation to continue.
+The attacker attempted to clear the Windows Event Logs. However, the relevant events had already been collected by the Splunk Universal Forwarder, allowing the investigation to continue using the centralized logs.
 
 <img width="1440" height="900" alt="screenshots/08-defense-evasion.png" src="https://github.com/user-attachments/assets/767eb104-6d51-4548-9e2b-6249fd435c7d" />
 <img width="1440" height="900" alt="screenshots:008-defense-evasion" src="https://github.com/user-attachments/assets/d73f5ba2-b96c-4dca-856a-43805e25d633" />
