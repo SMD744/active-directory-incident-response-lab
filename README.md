@@ -1,60 +1,93 @@
 🛡️ Active Directory Incident Response Lab
+> **A hands-on Red Team vs Blue Team cybersecurity lab focused on Active Directory attack simulation, SIEM-based detection, incident investigation, and response.**
 
-> **Final Project – ElevateUTTech Cybersecurity Bootcamp**
 
-## Overview
+## 📌 Project Overview
 
-This repository contains my final project completed during the ElevateUTTech Cybersecurity Bootcamp.
+This project is a full incident response simulation conducted in an isolated Active Directory lab environment.
 
-The objective of this project was to build a realistic Active Directory lab, simulate a complete cyber attack, and investigate the attack from a Security Operations Center (SOC) analyst's perspective.
+The objective was to simulate a realistic attack against a Windows Active Directory Domain Controller from a Kali Linux attacker machine, while using Splunk Enterprise, Sysmon, and Windows Security Logs to detect, investigate, and reconstruct the attack.
 
-Using Splunk Enterprise, Sysmon, and Windows Security Logs, I tracked the attack from the initial reconnaissance phase through privilege escalation, persistence, data exfiltration, and defense evasion. The goal was not only to perform the attack but to understand how defenders can detect, investigate, and respond to malicious activity using log analysis and event correlation.
+Rather than focusing only on offensive techniques, the project follows the complete security operations workflow:
 
----
+**Reconnaissance → Identity Discovery → Initial Access → Discovery → Privilege Escalation → Persistence → Data Exfiltration → Defense Evasion → Investigation**
 
-# 🖥️ Lab Environment
-
-| Component | Technology |
-|-----------|------------|
-| Attacker Machine | Kali Linux |
-| Target Machine | Windows Server (Active Directory Domain Controller) |
-| SIEM | Splunk Enterprise |
-| Endpoint Monitoring | Sysmon |
-| Log Collection | Splunk Universal Forwarder |
+The exercise demonstrates how attacker activity can leave behind security telemetry and how a SOC analyst can correlate those events to understand what happened, identify indicators of compromise (IOCs), reconstruct the attack timeline, and recommend appropriate response actions.
 
 ---
 
-# 🎯 Project Objectives
+## 🎯 Project Objectives
 
 The objectives of this project were to:
 
-- Build a small Active Directory lab
-- Simulate a realistic attack against a Windows Domain
-- Detect attacker activity using Splunk Enterprise
+- Build a small Active Directory lab environment
+- Simulate a realistic attack against a Windows Domain Controller
+- Perform reconnaissance and identity discovery
+- Simulate password spraying and unauthorized authentication
+- Detect suspicious activity using Splunk Enterprise
 - Investigate Windows Security Events and Sysmon logs
+- Correlate multiple security events during an investigation
 - Reconstruct the complete attack timeline
 - Identify Indicators of Compromise (IOCs)
+- Map observed attack activity to relevant MITRE ATT&CK techniques
 - Recommend containment, eradication, and recovery actions
 
 ---
 
-# ⚔️ Attack Lifecycle
+
+## 🖥️ Lab Environment
+
+| Component | Technology |
+|---|---|
+| Attacker Machine | Kali Linux |
+| Target Machine | Windows Server — Active Directory Domain Controller |
+| SIEM | Splunk Enterprise |
+| Endpoint Monitoring | Sysmon |
+| Log Collection | Splunk Universal Forwarder |
+
+The attack simulation was performed inside an isolated lab environment to safely reproduce attacker behavior and investigate the resulting security events.
+
+---
+
+## ⚔️ Attack Lifecycle
 
 The simulation covered the following stages:
 
-- Reconnaissance
-- Username Enumeration
-- Password Spraying
-- Initial Access
-- Discovery
-- Privilege Escalation
-- Persistence
-- Data Exfiltration
-- Defense Evasion
+1. **Reconnaissance**
+2. **Username Enumeration**
+3. **Password Spraying**
+4. **Initial Access**
+5. **Discovery**
+6. **Privilege Escalation**
+7. **Persistence**
+8. **Data Exfiltration**
+9. **Defense Evasion**
 
-Each phase includes both the Red Team activity and the Blue Team investigation.
+Each phase included both simulated attacker activity and defensive investigation using collected security telemetry.
 
 ---
+## 🔍 SOC Investigation Approach
+
+The investigation followed a structured incident response process:
+
+```text
+Attack Simulation
+       ↓
+Security Telemetry Generated
+       ↓
+Splunk Detection
+       ↓
+Event Correlation
+       ↓
+Investigation
+       ↓
+Attack Timeline Reconstruction
+       ↓
+IOC Identification
+       ↓
+Containment & Response Recommendations
+
+
 
 # 📸 Project Screenshots
 
