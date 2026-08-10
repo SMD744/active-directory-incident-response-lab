@@ -149,7 +149,7 @@ Correlation of these events allowed the Blue Team to reconstruct the attack from
 
 During the simulated incident response process, the following actions were recommended or performed:
 
-Block the attacking IP address.
+Block the attacking IP address.                                                                                                               
 Disable compromised accounts.
 Reset compromised credentials.
 Remove the unauthorized SAMADT account.
@@ -180,15 +180,7 @@ SMB access: ```5140```
 Log clearing: ```1102, 104```
 
 
-Attacker IP: 192.168.1.186
-Compromised account: Trent
-Unauthorized privileged account: SAMADT
-Target Domain Controller: 192.168.1.191
-Password spraying: 4625 → 4624
-Privilege escalation: 4672, 4728, 4732, 4756
-Account creation: 4720
-SMB access: 5140
-Log clearing: 1102, 104
+
 
 
 
