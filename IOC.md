@@ -149,15 +149,16 @@ Correlation of these events allowed the Blue Team to reconstruct the attack from
 
 During the simulated incident response process, the following actions were recommended or performed:
 
-Block the attacking IP address.                                                                                                               
-Disable compromised accounts.
-Reset compromised credentials.
-Remove the unauthorized SAMADT account.
-Revoke Trent's unauthorized Domain Admin privileges.
-Terminate active remote sessions.
-Isolate the Domain Controller from the network.
-Review Active Directory privileged group memberships.
-Verify centralized logging and continued security monitoring.
+1. Block the attacking IP address.
+2. Disable compromised accounts.
+3. Reset compromised credentials.
+4. Remove the unauthorized SAMADT account.
+5. Revoke Trent's unauthorized Domain Admin privileges.
+6. Terminate active remote sessions.
+7. Isolate the Domain Controller from the network.
+8. Review Active Directory privileged group memberships.
+9. Verify centralized logging and continued security monitoring.                                                                       
+
 
 These actions formed part of the containment, eradication, and recovery process documented in the full incident response report.
 
