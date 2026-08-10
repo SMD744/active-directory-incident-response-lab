@@ -149,15 +149,15 @@ Correlation of these events allowed the Blue Team to reconstruct the attack from
 
 During the simulated incident response process, the following actions were recommended or performed:
 
-1. Block the attacking IP address.
-2. Disable compromised accounts.
-3. Reset compromised credentials.
-4. Remove the unauthorized SAMADT account.
-5. Revoke Trent's unauthorized Domain Admin privileges.
-6. Terminate active remote sessions.
-7. Isolate the Domain Controller from the network.
-8. Review Active Directory privileged group memberships.
-9. Verify centralized logging and continued security monitoring.                                                                       
+- Block the attacking IP address.
+- Disable compromised accounts.
+- Reset compromised credentials.
+- Remove the unauthorized SAMADT account.
+- Revoke Trent's unauthorized Domain Admin privileges.
+- Terminate active remote sessions.
+- Isolate the Domain Controller from the network.
+- Review Active Directory privileged group memberships.
+- Verify centralized logging and continued security monitoring.                                                                       
 
 
 These actions formed part of the containment, eradication, and recovery process documented in the full incident response report.
@@ -170,15 +170,17 @@ The investigation identified a combination of network, account, authentication, 
 
 The most significant indicators were:
 
-Attacker IP: ``` 192.168.1.186 ```
-Compromised account: ```Trent```
-Unauthorized privileged account: ```SAMADT```
-Target Domain Controller: ```192.168.1.191```
-Password spraying: ```4625 → 4624```
-Privilege escalation: ```4672, 4728, 4732, 4756```
-Account creation: ```4720```
-SMB access: ```5140```
-Log clearing: ```1102, 104```
+- Attacker IP: ``` 192.168.1.186 ```
+- Compromised account: ```Trent```
+- Unauthorized privileged account: ```SAMADT```
+- Target Domain Controller: ```192.168.1.191```
+- Password spraying: ```4625 → 4624```
+- Privilege escalation: ```4672, 4728, 4732, 4756```
+- Account creation: ```4720```
+- SMB access: ```5140```
+- Log clearing: ```1102, 104```
+
+
 
 
 
