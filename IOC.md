@@ -50,7 +50,9 @@ Authentication: NTLM
 
 ---
 
-👑 Privilege Escalation Indicators
+
+
+## 👑 Privilege Escalation Indicators
 The following events were correlated during the privilege escalation investigation:
 
 Event ID	Significance
@@ -63,6 +65,8 @@ Event ID	Significance
 The investigation showed that Trent was elevated to Domain Administrator privileges.
 
 ---
+
+
 
 🧑‍💻 Persistence Indicators
 
