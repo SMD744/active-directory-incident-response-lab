@@ -43,8 +43,8 @@ Objective
 Investigate repeated failed authentication attempts and identify a successful authentication following the failures.
 
 ## Events Investigated
-> 4625 — Failed Logon
-> 4624 — Successful Logon
+> - 4625 — Failed Logon
+> - 4624 — Successful Logon
 
 ## Investigation Pattern
 Multiple 4625 events
@@ -66,11 +66,11 @@ This sequence was used as evidence of the simulated password spraying attack.
 Identify changes that resulted in the compromised account obtaining elevated privileges.
 
 ## Events Investigated
-> 4624 — Successful Logon
-> 4672 — Special Privileges Assigned
-> 4728 — Account Added to Security Group
-> 4732 — Account Added to Local Security Group
-> 4756 — Account Added to Universal Security Group
+> - 4624 — Successful Logon
+> - 4672 — Special Privileges Assigned
+> - 4728 — Account Added to Security Group
+> - 4732 — Account Added to Local Security Group
+> - 4756 — Account Added to Universal Security Group
 
 
 ## Investigation Pattern
