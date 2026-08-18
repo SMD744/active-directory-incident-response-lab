@@ -164,14 +164,16 @@ Even after the attacker cleared the local Windows Event Logs, the relevant event
 
 This allowed the investigation to:
 
-Identify the compromised account
-Identify the attacker's source IP
-Detect privilege escalation
-Identify the unauthorized privileged account
-Detect administrative SMB access
-Detect log-clearing activity
-Reconstruct the attack timeline
-Support containment and remediation decisions
+> Identify the compromised account
+> Identify the attacker's source IP
+> Detect privilege escalation
+> Identify the unauthorized privileged account
+> Detect administrative SMB access
+> Detect log-clearing activity
+> Reconstruct the attack timeline
+> Support containment and remediation decisions
+
+
 
 
 
