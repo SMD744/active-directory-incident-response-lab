@@ -268,7 +268,8 @@ The project also reinforced the importance of strong password policies, least pr
 # 📄 Full Project Documentation
 For the complete investigation, attack evidence, event analysis, incident timeline, and response recommendations:
 
-👉 [View the Full Incident Response Report](docs/Incident_Response_Simulation_GitHub_HighQuality.pdf)
+👉 [View the Full Incident Response Report](doc/Incident_Response_Simulation_GitHub_HighQuality.pdf)
+doc/Incident_Response_Simulation_GitHub_HighQuality.pdf
 
 
 ---
