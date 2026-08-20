@@ -265,30 +265,40 @@ One of the biggest lessons I learned was the importance of centralized logging. 
 The project also reinforced the importance of strong password policies, least privilege, continuous monitoring, and timely incident response.
 
 ---
+# 📄 Full Project Documentation
+For the complete investigation, attack evidence, event analysis, incident timeline, and response recommendations:
+
+👉 [View the Full Incident Response Report](docs/Incident_Response_Simulation_GitHub_HighQuality.pdf)
+
+
+---
 
 # 📂 Repository Structure
 
 ```
 active-directory-incident-response-lab/
 
+active-directory-incident-response-lab/
+
 ├── README.md
 ├── LICENSE
-├── docs/
-│   └── Incident_Response_Simulation_Full_Attack_Lifecycle.pdf
-│
-├── screenshots/
-│   ├── 01-lab-environment.png
-│   ├── 02-nmap-scan.png
-│   ├── 03-kerbrute-enumeration.png
-│   ├── 04-password-spraying.png
-│   ├── 05-privilege-escalation.png
-│   ├── 06-persistence.png
-│   ├── 07-data-exfiltration.png
-│   ├── 08-defense-evasion.png
-│   └── 09-incident-timeline.png
-│
 ├── IOC.md
-└── MITRE.md
+├── MITRE.md
+├── SPL_Queries.md
+│
+├── docs/
+│   └── Incident_Response_Simulation_GitHub_HighQuality.pdf
+│
+└── screenshots/
+    ├── 01-lab-environment.png
+    ├── 02-nmap-scan.png
+    ├── 03-kerbrute-enumeration.png
+    ├── 04-password-spraying.png
+    ├── 05-privilege-escalation.png
+    ├── 06-persistence.png
+    ├── 07-data-exfiltration.png
+    ├── 08-defense-evasion.png
+    └── 09-incident-timeline.png
 ```
 
 ---
