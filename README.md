@@ -120,7 +120,8 @@ These findings confirmed the target's Active Directory role and helped determine
 
 ### Evidence
 
-![Nmap Reconnaissance Scan](screenshots/02-nmap-scan.png)
+![Nmap Reconnaissance Scan](<img width="1440" height="900" alt="Screenshot 2026-07-09 at 2 37 399 PM" src="https://github.com/user-attachments/assets/215b4e9f-20f6-4c73-b788-6c86fb30accc" />
+)
 
 
 
