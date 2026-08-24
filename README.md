@@ -124,8 +124,6 @@ These findings confirmed the target's Active Directory role and helped determine
 
 
 
-![Nmap Reconnaissance Scan](screenshots/Screenshot2026-07-09at2.37.399PM.png)
-
 
 
 ---
@@ -294,16 +292,7 @@ active-directory-incident-response-lab/
 ├── docs/
 │   └── Incident_Response_Simulation_GitHub_HighQuality.pdf
 │
-└── screenshots/
-    ├── 01-lab-environment.png
-    ├── 02-nmap-scan.png
-    ├── 03-kerbrute-enumeration.png
-    ├── 04-password-spraying.png
-    ├── 05-privilege-escalation.png
-    ├── 06-persistence.png
-    ├── 07-data-exfiltration.png
-    ├── 08-defense-evasion.png
-    └── 09-incident-timeline.png
+└──
 ```
 
 ---
